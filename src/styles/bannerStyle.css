@@ -1,0 +1,13 @@
+
+banner div {
+  height: 15vh;
+  min-height: 110px;
+  background-image: url("../images/mountains2.jpg");
+  background-size: 100% auto;
+  background-position-y: 89%;
+  padding: 10px;
+}
+
+banner img {
+  width: 110px;
+}

@@ -1,0 +1,16 @@
+navbar {
+  float: left;
+  width: 130px;
+  height: 85vh;
+  color: rgb(242, 242, 242);
+  background-color: rgb(31, 78, 120);  
+/*  background-color: rgb(47, 117, 181);
+*/  /*background-color: rgb(155, 199, 230);*/
+}
+
+navbar ul {
+  background-color: rgb(31, 78, 120);  
+  list-style-type: none;
+  list-style-position: inside;
+  padding-left: 20px;
+}

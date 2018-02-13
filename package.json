@@ -1,0 +1,30 @@
+{
+  "name": "allens-creek-capital",
+  "version": "1.0.0",
+  "description": "Allens Creek Capital",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ephraimg/allens-creek-capital.git"
+  },
+  "author": "Ephraim Glick",
+  "bugs": {
+    "url": "https://github.com/ephraimg/allens-creek-capital/issues"
+  },
+  "homepage": "https://github.com/ephraimg/allens-creek-capital#readme",
+  "dependencies": {
+    "angular": "^1.6.9"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
