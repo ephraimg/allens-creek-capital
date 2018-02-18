@@ -1,5 +1,5 @@
 
-const accApp = angular.module('accApp', ['ui.router']);
+var accApp = angular.module('accApp', ['ui.router']);
 
 accApp.config(function($stateProvider) {
   var mainState = {

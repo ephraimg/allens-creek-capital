@@ -4,6 +4,7 @@ ui-view {
   position: absolute;
   left: 120px;
   height: 100%;
-  width: 100%;
+  min-width: 700px;
+  overflow: hidden;
   padding: 20px;
 }
