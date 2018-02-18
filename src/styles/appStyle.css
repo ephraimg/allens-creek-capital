@@ -1,8 +1,15 @@
 #app-container {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 app div {
   background-color: rgb(221, 235, 247);
+}
+
+.under-banner {
+	width: 100%;
+	position: absolute;
+	top: 120px;
+	bottom: 0;
 }

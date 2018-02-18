@@ -1,0 +1,63 @@
+/* Add a background color and some padding around the form */
+.contact {
+  background-color: rgb(221, 235, 247);
+  height: 100%;
+}
+
+.contact h3 {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.contact label {
+    display: block;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+.contact input[type=text], select {
+    display: block;
+    width: 250px; /* Full width ???? */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 1px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: none /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+.contact textarea {
+    display: block;
+    width: 400px; /* Full width ???? */
+    rows: 30;
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 1px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: none /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+#message {
+    float: left;
+    margin-right: 10px;
+}
+
+/* Style the submit button with a specific background color etc */
+.contact input[type=submit] {
+    background-color: rgb(31, 78, 120);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.contact input[type=submit]:hover {
+  background-color: rgb(221, 235, 247);
+}
+

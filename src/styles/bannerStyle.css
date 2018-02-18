@@ -1,13 +1,14 @@
-
-banner div {
-  height: 15vh;
-  min-height: 110px;
-  background-image: url("../images/mountains2.jpg");
-  background-size: 100% auto;
+banner {
+  display: block;
+  box-sizing: border-box;
+  height: 120px;
+  background-image: url("../images/mountains2.jpg");  
+  background-size: cover;
   background-position-y: 89%;
-  padding: 10px;
+  background-repeat: no-repeat;
 }
 
 banner img {
-  width: 110px;
+  margin: 5px;
+  height: 110px;
 }

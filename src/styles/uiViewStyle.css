@@ -1,0 +1,9 @@
+ui-view {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  left: 120px;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
