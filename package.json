@@ -20,7 +20,8 @@
   "dependencies": {
     "@uirouter/angularjs": "^1.0.15",
     "angular": "^1.6.9",
-    "angular-ui-router": "^1.0.3"
+    "angular-ui-router": "^1.0.3",
+    "express": "^4.16.2"
   },
   "devDependencies": {
     "eslint": "^4.17.0",
