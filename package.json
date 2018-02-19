@@ -4,7 +4,8 @@
   "description": "Allens Creek Capital",
   "main": "index.js",
   "engines": {
-    "node": "4.0.0"
+    "node": "4.0.0",
+    "npm": "2.14.2"
   },
   "scripts": {
     "test": "test",
