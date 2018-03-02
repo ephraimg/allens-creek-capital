@@ -1,14 +1,28 @@
 banner {
   display: block;
   box-sizing: border-box;
-  height: 120px;
+  height: 160px;
   background-image: url("../images/mountains2.jpg");  
   background-size: cover;
-  background-position-y: 89%;
+  background-position: 100% 80%;
   background-repeat: no-repeat;
 }
 
 banner img {
-  margin: 5px;
-  height: 110px;
+  margin: 15px;
+  height: 175px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For narrow viewport: */
+
+	banner {
+	  height: 110px;
+	}
+
+	banner img {
+	  margin: 5px;
+	  height: 100px;
+	}
+
 }

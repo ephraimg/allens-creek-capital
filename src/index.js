@@ -8,23 +8,45 @@ accApp.config(function($stateProvider) {
     component: 'main'
   };
 
-  var alt1State = {
-    name: 'alt1',
-    url: '/alt1',
-    component: 'alt1'
+  var aboutState = {
+    name: 'about',
+    url: '/about',
+    component: 'about'
   };
 
-  var alt2State = {
-    name: 'alt2',
-    url: '/alt2',
-    component: 'alt2'
+  var teamState = {
+    name: 'team',
+    url: '/team',
+    component: 'team'
+  };
+
+  var investmentsState = {
+    name: 'investments',
+    url: '/investments',
+    component: 'investments'
+  };
+
+  var contactState = {
+    name: 'contact',
+    url: '/contact',
+    component: 'contact'
   };
 
   $stateProvider.state(mainState);
-  $stateProvider.state(alt1State);
-  $stateProvider.state(alt2State);
+  $stateProvider.state(aboutState);
+  $stateProvider.state(teamState);
+  $stateProvider.state(investmentsState);
+  $stateProvider.state(contactState);
 });
+
+accApp.config(['$stateProvider','$urlRouterProvider', 
+  function($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise("/main");
+  }
+]);
 
 accApp.config(function($locationProvider) {
   $locationProvider.html5Mode(true);
 });
+
+

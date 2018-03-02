@@ -1,15 +1,17 @@
 #app-container {
   height: 100%;
-  width: 100%;
-}
-
-app div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 9%;
+  right: 9%;
   background-color: rgb(221, 235, 247);
 }
 
-.under-banner {
-	width: 100%;
-	position: absolute;
-	top: 120px;
-	bottom: 0;
+@media only screen and (max-width: 1000px) {
+    /* For narrow viewport: */
+    #app-container {
+        left: 0;
+        right: 0;
+    }
 }

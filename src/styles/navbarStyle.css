@@ -1,39 +1,39 @@
 navbar {
   box-sizing: border-box;
-  display: block;
-  float: left;
-  padding: 40px 10px 10px 10px;
-  height: 100%;
-  width: 120px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
   color: rgb(242, 242, 242);
-  background-color: rgb(31, 78, 120);  
-/*  background-color: rgb(47, 117, 181);
-*/  /*background-color: rgb(155, 199, 230);*/
+  background-color: rgb(31, 78, 120);
 }
 
 navbar ul {
   list-style-type: none;
   list-style-position: inside;
-  padding-left: 0px;
+  padding: 0;
+  margin: 0;
   color: white;
   background-color: rgb(31, 78, 120);
 }
 
 navbar li {
-  border-width: 1px 0 0 0;
+  display: inline-block;
+  border-width: 0;
   border-style: solid;
   border-color: white;
+  margin: 0 0 0 50px;
 }
 
-navbar li:last-of-type {
-  border-bottom-width: 1px;
+navbar li:first-of-type {
+  margin-left: 185px;
 }
 
 navbar li a {
   box-sizing: border-box;
   color: white;
   text-decoration: none;
-  padding: 20px 10px;
+  padding: 12px 5px;
   display: block;
   margin: 0;
   width: 100%;
@@ -47,4 +47,26 @@ navbar li a:hover {
 
 navbar li a:active {
   color: rgb(221, 235, 247);
-};
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For narrow viewport: */
+
+    navbar ul {
+      padding: 0 20px;
+    }
+
+    navbar li {
+      margin: 0 0 0 10px;
+    }
+
+    navbar li:first-of-type {
+      margin-left: 0;
+    }
+
+    navbar li a {
+      padding: 5px;
+    }
+
+}
