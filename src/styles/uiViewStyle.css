@@ -5,6 +5,7 @@ ui-view {
   width: 100%;
   overflow: auto;
   padding: 20px;
+  font-size: 16px;
 }
 
 ui-view h3 {

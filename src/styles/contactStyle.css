@@ -1,4 +1,3 @@
-/* Add a background color and some padding around the form */
 .contact {
   background-color: rgb(221, 235, 247);
   height: 100%;
@@ -8,23 +7,32 @@
     display: block;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-.contact input[type=text], select {
+/* Prevent Chrome autocomplete from turning background yellow */
+@-webkit-keyframes autofill {
+    to { background: white; }
+}
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+.contact input[type=text], input[type=email] {
     display: block;
-    width: 250px; /* Full width ???? */
+    width: 300px; /* Full width ???? */
     padding: 12px; /* Some padding */  
     border: 1px solid #ccc; /* Gray border */
     border-radius: 1px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
-    resize: none /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-size: inherit;
 }
 
-/* Style inputs with type="text", select elements and textareas */
 .contact textarea {
     display: block;
-    width: 400px; /* Full width ???? */
+    width: 600px; /* Full width ???? */
+    height: 300px;
     rows: 30;
     padding: 12px; /* Some padding */  
     border: 1px solid #ccc; /* Gray border */
@@ -32,27 +40,52 @@
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
-    resize: none /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-size: inherit;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-#message {
-    float: left;
-    margin-right: 10px;
-}
-
-/* Style the submit button with a specific background color etc */
 .contact input[type=submit] {
-    background-color: rgb(31, 78, 120);
     color: white;
     padding: 12px 20px;
+    margin-right: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: smaller;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-.contact input[type=submit]:hover {
-  background-color: rgb(221, 235, 247);
+.contact form.ng-valid input[type=submit] {
+  background-color: rgb(31, 78, 120);
+}
+
+.contact form.ng-valid input[type=submit]:hover {
+  background-color: green;
+}
+
+.contact form.ng-valid input[type=submit]:active {
+  background-color: darkGreen;
+}
+
+.contact form.ng-invalid input[type=submit] {
+  background-color: rgb(211, 211, 211);
+}
+
+.contact input[type=text].ng-dirty.ng-invalid, input[type=email].ng-dirty.ng-invalid, textarea.ng-dirty.ng-invalid {
+  border: 2px solid red;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+    -webkit-box-shadow: 0px 0px 4px red;
+    -moz-box-shadow: 0px 0px 4px red;
+    box-shadow: 0px 0px 4px red;
+
+}
+
+@media only  screen and (max-width: 768px) {
+    .contact input[type=text], input[type=email], textarea {
+        max-width: 100%;
+    }
 }
 
