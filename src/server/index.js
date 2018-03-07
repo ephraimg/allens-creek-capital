@@ -12,14 +12,7 @@ app.use(express.static(root));
 app.use(bodyParser.json());
 app.use(expressSanitized.middleware());
 
-app.get('*', function(req, res) {
-	res.sendFile(path.join(root, 'index.html'));
-});
-
-app.post('/form', function(req, res) {
-	console.log('Body is:', req.body);
-	res.sendStatus(201);
-});
+require('./routeHandlers')(app)
 
 app.listen(process.env.PORT, function() {
 	console.log('Server running on port 5000')	

@@ -1,7 +1,7 @@
 accApp.component('contact', {
-  bindings: {
 
-  },
+  bindings: {},
+
   controller: function($http, $timeout) {
   	this.formName = '';
   	this.formEmail = '';
@@ -9,7 +9,6 @@ accApp.component('contact', {
   	this.success = false;
   	this.failure = false;
   	this.onSubmit = function(contactForm) {
-  		console.log(contactForm);
   		var config = {
   			method: 'POST',
   			url: '/form',
@@ -21,7 +20,6 @@ accApp.component('contact', {
   		}
   		$http(config).then(response => { 
   			this.success = true;
-  			contactForm.$setValidity(null, false);
   			contactForm.$setPristine();
   			contactForm.$setUntouched();
   			$timeout(() => {
@@ -38,5 +36,7 @@ accApp.component('contact', {
   		});
   	}
   },
+
   templateUrl: 'src/templates/contact.html'
+
 });
