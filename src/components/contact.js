@@ -20,7 +20,7 @@ accApp.component('contact', {
   		}
   		$http(config).then(response => { 
 			this.success = true;
-			this.formSubmitButton.blur();
+			contactForm.formSubmitButton.blur();
   			contactForm.$setPristine();
   			contactForm.$setUntouched();
   			$timeout(() => {
@@ -31,11 +31,11 @@ accApp.component('contact', {
   			}, 1500);
   		}, error => {
 			    this.failure = true;
-				this.formSubmitButton.disabled = true;
-				this.formSubmitButton.blur();
+				contactForm.formSubmitButton.disabled = true;
+				contactForm.formSubmitButton.blur();
   			$timeout(() => { 
 				this.failure = false;
-				this.formSubmitButton.disabled = false;
+				contactForm.formSubmitButton.disabled = false;
   			}, 1500);
   		});
   	}
