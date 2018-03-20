@@ -19,19 +19,23 @@ accApp.component('contact', {
   			}
   		}
   		$http(config).then(response => { 
-  			this.success = true;
+			this.success = true;
+			this.formSubmitButton.blur();
   			contactForm.$setPristine();
   			contactForm.$setUntouched();
   			$timeout(() => {
 			  	this.formName = '';
 			  	this.formEmail = '';
-				this.formMessage = '';
-  				this.success = false;
+                this.formMessage = '';
+				this.success = false;
   			}, 1500);
   		}, error => {
-  			this.failure = true;
+			    this.failure = true;
+				this.formSubmitButton.disabled = true;
+				this.formSubmitButton.blur();
   			$timeout(() => { 
-  				this.failure = false 
+				this.failure = false;
+				this.formSubmitButton.disabled = false;
   			}, 1500);
   		});
   	}
