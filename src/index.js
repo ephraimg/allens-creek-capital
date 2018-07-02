@@ -32,11 +32,18 @@ accApp.config(function($stateProvider) {
     component: 'contact'
   };
 
+  var legalState = {
+    name: 'legal',
+    url: '/legal',
+    component: 'legal'
+  };
+
   $stateProvider.state(mainState);
   $stateProvider.state(aboutState);
   $stateProvider.state(teamState);
   $stateProvider.state(investmentsState);
   $stateProvider.state(contactState);
+  $stateProvider.state(legalState);
 });
 
 accApp.config(['$stateProvider','$urlRouterProvider', 

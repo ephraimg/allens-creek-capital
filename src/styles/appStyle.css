@@ -1,10 +1,10 @@
 #app-container {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  box-sizing: border-box;
+  min-height: 100%;
+  position: relative;
   left: 9%;
   right: 9%;
+  padding-bottom: 2em;
   background-color: rgb(221, 235, 247);
   min-width: 450px;
 }

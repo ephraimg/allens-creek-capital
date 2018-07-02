@@ -1,0 +1,26 @@
+footer {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  padding: 0.5em;
+  margin: 0;
+  height: 2em;
+  width: 100%;
+  color: rgb(242, 242, 242);
+  background-color: rgb(31, 78, 120);
+}
+
+footer a {
+  display: inline;
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: rgb(221, 235, 247);
+}
+
+footer a:active {
+  color: rgb(221, 235, 247);
+}
