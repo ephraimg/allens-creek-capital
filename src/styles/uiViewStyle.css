@@ -1,8 +1,7 @@
 ui-view {
   display: block;
   box-sizing: border-box;
-/*  position: absolute;
-*/  width: 100%;
+  width: 100%;
   overflow: auto;
   padding: 20px;
   font-size: 16px;
