@@ -26,6 +26,24 @@ accApp.config(function($stateProvider) {
     component: 'investments'
   };
 
+  var targetsState = {
+    name: 'targets',
+    url: '/targets',
+    component: 'targets'
+  };
+
+  var valuesState = {
+    name: 'values',
+    url: '/values',
+    component: 'values'
+  };
+
+  var givingState = {
+    name: 'giving',
+    url: '/giving',
+    component: 'giving'
+  };
+
   var contactState = {
     name: 'contact',
     url: '/contact',
@@ -42,6 +60,9 @@ accApp.config(function($stateProvider) {
   $stateProvider.state(aboutState);
   $stateProvider.state(teamState);
   $stateProvider.state(investmentsState);
+  $stateProvider.state(valuesState);
+  $stateProvider.state(givingState);
+  $stateProvider.state(targetsState);
   $stateProvider.state(contactState);
   $stateProvider.state(legalState);
 });

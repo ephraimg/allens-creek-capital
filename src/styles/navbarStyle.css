@@ -22,11 +22,11 @@ navbar li {
   border-width: 0;
   border-style: solid;
   border-color: white;
-  margin: 0 0 0 50px;
+  margin: 0 0 0 1em;
 }
 
 navbar li:first-of-type {
-  margin-left: 185px;
+  margin-left: 200px;
 }
 
 navbar li a {
@@ -49,9 +49,18 @@ navbar li a:active {
   color: rgb(221, 235, 247);
 }
 
+@media only screen and (max-width: 1000px) {
+    /* For narrow viewport: */
+
+    navbar li {
+      margin: 0 0 0 1em;
+    }
+
+}
+
 @media only screen and (max-width: 768px) {
 
-    /* For narrow viewport: */
+    /* For very narrow viewport: */
 
     navbar ul {
       padding: 0 20px;
