@@ -1,41 +1,30 @@
 navbar {
   box-sizing: border-box;
-  text-align: center;
-  padding: 0;
-  margin: 0;
   width: 100%;
   color: rgb(242, 242, 242);
   background-color: rgb(31, 78, 120);
+  text-align: right;
 }
 
 navbar ul {
   list-style-type: none;
   list-style-position: inside;
-  padding: 0;
-  margin: 0;
+  padding: 0em 3.75em 0em 0;
   color: white;
+  margin: 0;
   background-color: rgb(31, 78, 120);
 }
 
 navbar li {
   display: inline-block;
-  border-width: 0;
-  border-style: solid;
-  border-color: white;
-  margin: 0 0 0 1em;
-}
-
-navbar li:first-of-type {
-  margin-left: 200px;
 }
 
 navbar li a {
   box-sizing: border-box;
   color: white;
   text-decoration: none;
-  padding: 12px 5px;
+  padding: 0.75em 0.5em;
   display: block;
-  margin: 0;
   width: 100%;
   height: 100%;
 }
@@ -49,33 +38,44 @@ navbar li a:active {
   color: rgb(221, 235, 247);
 }
 
-@media only screen and (max-width: 1000px) {
-    /* For narrow viewport: */
+navbar #hamburger {
+  display: inline-block;
+  float: right;
+  padding: 0.75em 0.5em;
+  margin-right: -3em;
+  cursor: pointer;
+}
 
-    navbar li {
-      margin: 0 0 0 1em;
-    }
+navbar #hamburger img {
+  height: 0.8em;
+  margin-left: 0.5em;
+}
 
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @media only screen and (max-width: 768px) {
 
     /* For very narrow viewport: */
 
+    navbar {
+      text-align: right;
+    }
+
     navbar ul {
-      padding: 0 20px;
+      padding: 0.5em 0 0.5em 0;
     }
 
     navbar li {
-      margin: 0 0 0 10px;
+      display: block;
     }
 
-    navbar li:first-of-type {
-      margin-left: 0;
+    navbar li a, navbar #hamburger {
+      padding: 0.25em 1em;
+      margin-right: 0;
     }
-
-/*    navbar li a {
-      padding: 5px;
-    }*/
 
 }

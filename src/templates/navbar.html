@@ -1,11 +1,14 @@
 <div>
-  <ul>
-    <li><a ui-sref="about">About Us</a></li>
-    <li><a ui-sref="team">Team</a></li>
-    <li><a ui-sref="investments">Investments</a></li>
-    <li><a ui-sref="targets">Target Sectors</a></li>
-    <li><a ui-sref="values">Our Values</a></li>    
-    <li><a ui-sref="giving">Giving Back</a></li>    
-    <li><a ui-sref="contact">Contact</a></li>
+  <ul ng-click="$ctrl.toggleMenu()">
+    <li ng-if="!$ctrl.check()" class="cf">
+        <div id="hamburger">Menu <img src="src/images/hamburger.png"></div>
+    </li>
+    <li ng-if="$ctrl.check()"><a ui-sref="about">About Us</a></li>
+    <li ng-if="$ctrl.check()"><a ui-sref="team">Team</a></li>
+    <li ng-if="$ctrl.check()"><a ui-sref="investments">Investments</a></li>
+    <li ng-if="$ctrl.check()"><a ui-sref="targets">Target Sectors</a></li>
+    <li ng-if="$ctrl.check()"><a ui-sref="values">Our Values</a></li>
+    <li ng-if="$ctrl.check()"><a ui-sref="giving">Giving Back</a></li>
+    <li ng-if="$ctrl.check()"><a ui-sref="contact">Contact</a></li>
   </ul>
 </div>

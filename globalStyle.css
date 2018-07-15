@@ -1,11 +1,14 @@
+
+
+/* Begin custom styles */
+
 html {
   height: 100%;
 }
 
 body {
   height: 100%;
-  margin: 0;
-  padding: 0;
+  /* switch to century gothic! */
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   background-color: rgb(221, 235, 247);
 }

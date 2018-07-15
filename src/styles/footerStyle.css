@@ -3,10 +3,12 @@ footer {
   position: absolute;
   bottom: 0;
   display: block;
-  padding: 0.5em;
+  width: 100%;
+  padding: 0 1em;
   margin: 0;
   height: 2em;
-  width: 100%;
+  font-size: small;
+  line-height: 2em;
   overflow: auto;
   color: rgb(242, 242, 242);
   background-color: rgb(31, 78, 120);

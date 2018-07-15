@@ -1,5 +1,6 @@
 banner {
   display: block;
+  position: relative;
   box-sizing: border-box;
   height: 160px;
   background-image: url("../images/mountains2.jpg");  
@@ -16,13 +17,13 @@ banner img {
 @media only screen and (max-width: 768px) {
     /* For narrow viewport: */
 
-	banner {
+/*	banner {
 	  height: 110px;
 	}
 
 	banner img {
 	  margin: 5px;
 	  height: 100px;
-	}
+	}*/
 
 }
