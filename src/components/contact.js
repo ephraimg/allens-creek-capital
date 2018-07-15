@@ -18,22 +18,22 @@ accApp.component('contact', {
   				message: this.formMessage
   			}
   		}
-  		$http(config).then(response => { 
+  		$http(config).then(function(response) { 
 			  this.success = true;
 			  // contactForm.formSubmitButton.blur();
   			contactForm.$setPristine();
   			contactForm.$setUntouched();
-  			$timeout(() => {
+  			$timeout(function() {
 			  	this.formName = '';
 			  	this.formEmail = '';
           this.formMessage = '';
 				  this.success = false;
   			}, 1500);
-  		}, error => {
+  		}, function(error) {
 			  this.failure = true;
 				// contactForm.formSubmitButton.disabled = true;
 				// contactForm.formSubmitButton.blur();
-  			$timeout(() => { 
+  			$timeout(function() { 
 				  this.failure = false;
 				  // contactForm.formSubmitButton.disabled = false;
   			}, 1500);
