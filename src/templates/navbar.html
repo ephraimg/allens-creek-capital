@@ -1,14 +1,16 @@
 <div>
-  <ul ng-click="$ctrl.toggleMenu()">
-    <li ng-if="!$ctrl.check()" class="cf">
-        <div id="hamburger">Menu <img src="src/images/hamburger.png"></div>
+  <ul ng-class="$ctrl.menuClass">
+    <li ng-click="$ctrl.openMenu($event)" class="menu-header cf">
+        <div>
+            Menu <img class="hamburger" src="src/images/hamburger.png">
+        </div>
     </li>
-    <li ng-if="$ctrl.check()"><a ui-sref="about">About Us</a></li>
-    <li ng-if="$ctrl.check()"><a ui-sref="team">Team</a></li>
-    <li ng-if="$ctrl.check()"><a ui-sref="investments">Investments</a></li>
-    <li ng-if="$ctrl.check()"><a ui-sref="targets">Target Sectors</a></li>
-    <li ng-if="$ctrl.check()"><a ui-sref="values">Our Values</a></li>
-    <li ng-if="$ctrl.check()"><a ui-sref="giving">Giving Back</a></li>
-    <li ng-if="$ctrl.check()"><a ui-sref="contact">Contact</a></li>
+    <li ng-click="$ctrl.closeMenu()"><a ui-sref="about">About Us</a></li>
+    <li ng-click="$ctrl.closeMenu()"><a ui-sref="team">Team</a></li>
+    <li ng-click="$ctrl.closeMenu()"><a ui-sref="investments">Investments</a></li>
+    <li ng-click="$ctrl.closeMenu()"><a ui-sref="targets">Target Sectors</a></li>
+    <li ng-click="$ctrl.closeMenu()"><a ui-sref="values">Our Values</a></li>
+    <li ng-click="$ctrl.closeMenu()"><a ui-sref="giving">Giving Back</a></li>
+    <li ng-click="$ctrl.closeMenu()"><a ui-sref="contact">Contact</a></li>
   </ul>
 </div>

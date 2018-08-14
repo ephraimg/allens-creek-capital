@@ -3,20 +3,22 @@ navbar {
   width: 100%;
   color: rgb(242, 242, 242);
   background-color: rgb(31, 78, 120);
-  text-align: right;
 }
 
 navbar ul {
   list-style-type: none;
   list-style-position: inside;
-  padding: 0em 3.75em 0em 0;
+  padding: 0 3em 0 15em;
   color: white;
   margin: 0;
   background-color: rgb(31, 78, 120);
+  display: flex;
+  justify-content: flex-end;
 }
 
 navbar li {
   display: inline-block;
+  flex: 1 1 auto;
 }
 
 navbar li a {
@@ -38,15 +40,14 @@ navbar li a:active {
   color: rgb(221, 235, 247);
 }
 
-navbar #hamburger {
-  display: inline-block;
-  float: right;
-  padding: 0.75em 0.5em;
-  margin-right: -3em;
+navbar .menu-header {
+  display: none;
   cursor: pointer;
+  padding: 0.25em 1em;
+  margin-right: 0;
 }
 
-navbar #hamburger img {
+navbar .menu-header .hamburger {
   height: 0.8em;
   margin-left: 0.5em;
 }
@@ -57,7 +58,7 @@ navbar #hamburger img {
   clear: both;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width:800px) {
 
     /* For very narrow viewport: */
 
@@ -67,15 +68,28 @@ navbar #hamburger img {
 
     navbar ul {
       padding: 0.5em 0 0.5em 0;
+      display: block;
     }
 
     navbar li {
       display: block;
     }
 
-    navbar li a, navbar #hamburger {
+    navbar li a {
       padding: 0.25em 1em;
       margin-right: 0;
+    }
+
+    navbar .closed li:not(.menu-header) {
+      display: none;
+    }
+
+    navbar .closed .menu-header {
+      display: block;
+    }
+
+    navbar .open .menu-header {
+      display: none;
     }
 
 }
